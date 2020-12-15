@@ -49,6 +49,7 @@ def inorderVisit(tree, visit_fn):
         visit_fn(tree.getRootVal())
         inorderVisit(tree.getRightChild(), visit_fn)
 
+# use recursive
 def postorderVisit(tree, visit_fn):
     if tree:
         postorderVisit(tree.getLeftChild(), visit_fn)
